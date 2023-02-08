@@ -240,6 +240,9 @@ PODS:
   - React-jsinspector (0.70.5)
   - React-logger (0.70.5):
     - glog
+  - react-native-zendesk-messaging (1.0.4):
+    - React-Core
+    - ZendeskSDKMessaging
   - React-perflogger (0.70.5)
   - React-RCTActionSheet (0.70.5):
     - React-Core/RCTActionSheetHeaders (= 0.70.5)
@@ -307,6 +310,27 @@ PODS:
     - React-logger (= 0.70.5)
     - React-perflogger (= 0.70.5)
   - Yoga (1.14.0)
+  - Zendesk (1.8.0):
+    - ZendeskSDKConversationKit (~> 1.6.0)
+  - ZendeskSDKConversationKit (1.6.0):
+    - ZendeskSDKFayeClient (~> 1.2.0)
+    - ZendeskSDKHTTPClient (~> 0.9.0)
+    - ZendeskSDKStorage (~> 0.5.0)
+  - ZendeskSDKFayeClient (1.2.0):
+    - ZendeskSDKLogger (~> 0.5.0)
+    - ZendeskSDKSocketClient (~> 1.2.0)
+  - ZendeskSDKHTTPClient (0.9.0):
+    - ZendeskSDKLogger (~> 0.5.0)
+  - ZendeskSDKLogger (0.5.0)
+  - ZendeskSDKMessaging (2.8.0):
+    - Zendesk (~> 1.8.0)
+    - ZendeskSDKConversationKit (~> 1.6.0)
+    - ZendeskSDKUIComponents (~> 2.3.0)
+  - ZendeskSDKSocketClient (1.2.0):
+    - ZendeskSDKLogger (~> 0.5.0)
+  - ZendeskSDKStorage (0.5.0):
+    - ZendeskSDKLogger (~> 0.5.0)
+  - ZendeskSDKUIComponents (2.3.0)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
@@ -338,6 +362,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - "react-native-zendesk-messaging (from `../node_modules/@flashcoffee/react-native-zendesk-messaging`)"
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -355,6 +380,15 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - fmt
+    - Zendesk
+    - ZendeskSDKConversationKit
+    - ZendeskSDKFayeClient
+    - ZendeskSDKHTTPClient
+    - ZendeskSDKLogger
+    - ZendeskSDKMessaging
+    - ZendeskSDKSocketClient
+    - ZendeskSDKStorage
+    - ZendeskSDKUIComponents
 
 EXTERNAL SOURCES:
   boost:
@@ -413,6 +447,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-zendesk-messaging:
+    :path: "../node_modules/@flashcoffee/react-native-zendesk-messaging"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -470,6 +506,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 31564fa6912459921568e8b0e49024285a4d584b
   React-jsinspector: badd81696361249893a80477983e697aab3c1a34
   React-logger: fdda34dd285bdb0232e059b19d9606fa0ec3bb9c
+  react-native-zendesk-messaging: fca3b832f3839da00332e9f45ae0f69998951dd0
   React-perflogger: e68d3795cf5d247a0379735cbac7309adf2fb931
   React-RCTActionSheet: 05452c3b281edb27850253db13ecd4c5a65bc247
   React-RCTAnimation: 578eebac706428e68466118e84aeacf3a282b4da
@@ -483,6 +520,15 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 7401c4a40f8728fd89df4a56104541b760876117
   ReactCommon: c9246996e73bf75a2c6c3ff15f1e16707cdc2da9
   Yoga: eca980a5771bf114c41a754098cd85e6e0d90ed7
+  Zendesk: bc72c7a3c0284c717f3220c27dc7308876d1b353
+  ZendeskSDKConversationKit: d4c9f11cdc6dac0488fb79a04d3a4bad7fc58bce
+  ZendeskSDKFayeClient: c1d4b9973cdf999c7a717c981c4cd4c6e1186f93
+  ZendeskSDKHTTPClient: 3d4b59eb72555d5cf84fd9761712762890e1d12b
+  ZendeskSDKLogger: 9d80689480792be806f3c777124c87bbaed9394f
+  ZendeskSDKMessaging: d087596e699cf076c2bda39dea55498c399d4e4d
+  ZendeskSDKSocketClient: 4c11b499acc0c4abe55c5574a74ff8135b7b7624
+  ZendeskSDKStorage: be97db5c9418cecbd15e1b24b732cc0e8e10a991
+  ZendeskSDKUIComponents: b9a3a6d3036ebd093229a2c7e7c598afc870fb47
 
 PODFILE CHECKSUM: d33335acf0e23b838df59a20cabb679487ee295a
 
